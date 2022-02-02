@@ -72,8 +72,6 @@ img {
 
 .header {
   background: var(--some-bckgrnd-text-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 .header-container {
@@ -129,6 +127,9 @@ img {
 .mail-tel-item + .mail-tel-item {
   margin-left: 50px;
 }
+.header-mail::before {
+  background-image: url(../images/icons.svg#icon-envelope);
+}
 .header-mail {
   font-weight: 500;
   font-size: 14px;
@@ -151,11 +152,26 @@ img {
 /*  -------------------to order-------------  */
 
 .order-section {
-  background: var(--accent-bckgnd-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  background-color: var(--accent-bckgnd-color);
   align-items: center;
   text-align: center;
+}
+.order-container {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Order-sect-pict.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .bussines {
   font-size: 44px;
@@ -198,6 +214,26 @@ img {
 }
 .wwd-list-item {
   margin-right: 30px;
+}
+.wwd-container {
+  display: flex;
+  background: var(--portfolio-btn-color);
+  border-radius: 4px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+.wwd-svg-container {
+  width: 70px;
+  height: 70px;
+  align-items: center;
+}
+.wwd-container:nth-child(1) {
+}
+.wwd-container:nth-child(2) {
+}
+.wwd-container:nth-child(3) {
+}
+.wwd-container:nth-child(4) {
 }
 .wwd-list-item:last-child {
   margin-right: 0;
@@ -282,6 +318,23 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-main-color);
+}
+.team-social {
+  display: flex;
+  justify-content: center;
+}
+.team-icons {
+}
+.team-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: aqua;
+}
+.team-svg-icon {
 }
 
 /*  ---------------footer--------------------  */
